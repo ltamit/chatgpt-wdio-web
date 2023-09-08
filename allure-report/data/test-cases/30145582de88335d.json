@@ -1,0 +1,177 @@
+{
+  "uid" : "30145582de88335d",
+  "name" : "should login with valid credentials",
+  "historyId" : "541f8c7d34c9b47b11818cc8dc77cb0c",
+  "time" : {
+    "start" : 1694178474314,
+    "stop" : 1694178475588,
+    "duration" : 1274
+  },
+  "status" : "unknown",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "unknown",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/execute/sync",
+      "time" : {
+        "start" : 1694178474317,
+        "stop" : 1694178475565,
+        "duration" : 1248
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ed561e4724fa2d21",
+        "name" : "Request",
+        "source" : "ed561e4724fa2d21.txt",
+        "type" : "text/plain",
+        "size" : 97
+      }, {
+        "uid" : "1e5cb2d3a47e6fd0",
+        "name" : "Response",
+        "source" : "1e5cb2d3a47e6fd0.txt",
+        "type" : "text/plain",
+        "size" : 97
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/element",
+      "time" : {
+        "start" : 1694178475568,
+        "stop" : 1694178475586,
+        "duration" : 18
+      },
+      "status" : "unknown",
+      "steps" : [ {
+        "name" : "POST /session/:sessionId/element",
+        "time" : {
+          "start" : 1694178475569,
+          "stop" : 1694178475586,
+          "duration" : 17
+        },
+        "status" : "unknown",
+        "steps" : [ {
+          "name" : "POST /session/:sessionId/element",
+          "time" : {
+            "start" : 1694178475570,
+            "stop" : 1694178475586,
+            "duration" : 16
+          },
+          "status" : "unknown",
+          "steps" : [ {
+            "name" : "POST /session/:sessionId/url",
+            "time" : {
+              "start" : 1694178475572,
+              "stop" : 1694178475573,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "9e08c988fe2745c7",
+              "name" : "Request",
+              "source" : "9e08c988fe2745c7.txt",
+              "type" : "text/plain",
+              "size" : 55
+            } ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ {
+            "uid" : "16fa5d316e325d33",
+            "name" : "Request",
+            "source" : "16fa5d316e325d33.txt",
+            "type" : "text/plain",
+            "size" : 47
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "ea44dff7a60c268",
+          "name" : "Request",
+          "source" : "ea44dff7a60c268.txt",
+          "type" : "text/plain",
+          "size" : 53
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 3,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "ba824d6d4045117e",
+        "name" : "Request",
+        "source" : "ba824d6d4045117e.txt",
+        "type" : "text/plain",
+        "size" : 53
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "package",
+    "value" : ".Users.amitwalia.Documents.LT_Work.demos.gpt-based-demo.gptblog01.chatgptwdio.test.specs.simpleLoginForm.spec.js"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "SimpleLoginForm"
+  }, {
+    "name" : "feature",
+    "value" : "SimpleLoginForm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-116.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "30145582de88335d.json",
+  "parameterValues" : [ "chrome-116.0" ]
+}

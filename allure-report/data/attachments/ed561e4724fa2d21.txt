@@ -1,0 +1,4 @@
+{
+  "script": "lambda-name=SimpleLoginForm - should login with valid credentials",
+  "args": []
+}

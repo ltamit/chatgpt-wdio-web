@@ -1,0 +1,26 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : ".Users.amitwalia.Documents.LT_Work.demos.gpt-based-demo.gptblog01.chatgptwdio.test.specs.simpleLoginForm.spec.js",
+    "children" : [ {
+      "name" : "should login with valid credentials",
+      "uid" : "30145582de88335d",
+      "parentUid" : "fc8a36b62f469cb9898b35eddd96fbba",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1694178474314,
+        "stop" : 1694178475588,
+        "duration" : 1274
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome-116.0" ]
+    } ],
+    "uid" : ".Users.amitwalia.Documents.LT_Work.demos.gpt-based-demo.gptblog01.chatgptwdio.test.specs.simpleLoginForm.spec.js"
+  } ]
+}
