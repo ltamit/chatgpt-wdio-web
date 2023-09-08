@@ -10,8 +10,8 @@ on:
 
 
 env:  # Setting environment variables for this specific job
-    LT_USERNAME: ${{ secrets.LT_USERNAME }}
-    LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
+    LT_USERNAME: ${{ vars.LT_USERNAME }}
+    LT_ACCESS_KEY: ${{ vars.LT_ACCESS_KEY }}
 
 
 jobs:
@@ -36,7 +36,7 @@ jobs:
       run: npm install
 
     - name: Run WebDriverIO tests
-      run: LT_USERNAME=${{ secrets.LT_USERNAME }} LT_ACCESS_KEY=${{ secrets.LT_ACCESS_KEY }} npx wdio wdio.conf.js
+      run: npx wdio wdio.conf.js
 
     # # Optional: Generate Allure report and upload as artifact
     # - name: Generate Allure Report
