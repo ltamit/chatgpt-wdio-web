@@ -7,7 +7,7 @@ exports.config = {
     runner: 'local',
 
     user: process.env.LT_USERNAME || ${{ secrets.LT_USERNAME }},
-    key: process.env.LT_ACCESS_KEY || "Your Lambdatest Access Key",
+    key: process.env.LT_ACCESS_KEY || ${{ secrets.LT_ACCESS_KEY }},
 
     path: "/wd/hub",
     hostname: "hub.lambdatest.com",
