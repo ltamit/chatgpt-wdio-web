@@ -16,6 +16,10 @@ jobs:
       matrix:
         node-version: [14.x]  # You can specify multiple Node.js versions here
 
+    env:  # Setting environment variables for this specific job
+      LT_USERNAME: ${{ secrets.LT_USERNAME }}
+      LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
