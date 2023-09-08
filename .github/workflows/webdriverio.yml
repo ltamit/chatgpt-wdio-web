@@ -36,7 +36,7 @@ jobs:
       run: npm install
 
     - name: Run WebDriverIO tests
-      run: LAMBDATEST_USERNAME=${{ secrets.LAMBDATEST_USERNAME }} LAMBDATEST_ACCESS_KEY=${{ secrets.LAMBDATEST_ACCESS_KEY }} npx wdio wdio.conf.js
+      run: LT_USERNAME=${{ secrets.LT_USERNAME }} LT_ACCESS_KEY=${{ secrets.LT_ACCESS_KEY }} npx wdio wdio.conf.js
 
     # # Optional: Generate Allure report and upload as artifact
     # - name: Generate Allure Report
