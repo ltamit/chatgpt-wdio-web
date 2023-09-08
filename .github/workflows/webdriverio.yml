@@ -1,0 +1,42 @@
+name: WebDriverIO CI
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger the workflow on pull requests to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]  # You can specify multiple Node.js versions here
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run WebDriverIO tests
+      run: npx wdio wdio.conf.js
+
+    # Optional: Generate Allure report and upload as artifact
+    - name: Generate Allure Report
+      run: allure generate --clean
+
+    - name: Upload Allure Report as Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: allure-report
+        path: allure-report/
