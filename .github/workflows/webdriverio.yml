@@ -35,12 +35,12 @@ jobs:
     - name: Run WebDriverIO tests
       run: npx wdio wdio.conf.js
 
-    # Optional: Generate Allure report and upload as artifact
-    - name: Generate Allure Report
-      run: allure generate --clean
+    # # Optional: Generate Allure report and upload as artifact
+    # - name: Generate Allure Report
+    #   run: allure generate --clean
 
-    - name: Upload Allure Report as Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: allure-report
-        path: allure-report/
+    # - name: Upload Allure Report as Artifact
+    #   uses: actions/upload-artifact@v2
+    #   with:
+    #     name: allure-report
+    #     path: allure-report/
